@@ -2,24 +2,12 @@ name: affichage Hello World
 
 on:
   push:
+    branches:
+      -main
 
 jobs:
-  first_job:
+  affichage:
       runs-on: ubuntu-latest
-
       steps:
-        - name: affichage un
-          run: echo "ceci est le premier job"
-  second_job:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: affichage deux
-        run: echo "ceci est le second job"
-
-  third_job:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: affichage trois
-        run: echo "ceci est le troisième job"
+        - name: affichage
+          run: echo "hello world"
