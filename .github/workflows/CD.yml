@@ -1,27 +1,27 @@
-name: Player information Workflow
-
-on:
-  workflow_dispatch:
-    inputs:
-      usernames:
-        description: 'username of the player'
-        required: true
-        type: string
-      level:
-        description: 'level of the player'
-        required: true
-        type: string
-      class:
-        description: 'the class of the player'
-        required: true
-        type: choice
-        options: ["jedi", "sith", "rebel"]
-
-jobs:
-  player_info:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Display player information
-        run: echo "Le joueur super ${{ github.event.inputs.usernames }} est de niveau ${{ github.event.inputs.level }} et joue un ${{ github.event.inputs.class }}."
+#name: Player information Workflow
+#
+#on:
+#  workflow_dispatch:
+#    inputs:
+#      usernames:
+#        description: 'username of the player'
+#        required: true
+#        type: string
+#      level:
+#        description: 'level of the player'
+#        required: true
+#        type: string
+#      class:
+#        description: 'the class of the player'
+#        required: true
+#        type: choice
+#        options: ["jedi", "sith", "rebel"]
+#
+#jobs:
+#  player_info:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v2
+#      - name: Display player information
+#        run: echo "Le joueur super ${{ github.event.inputs.usernames }} est de niveau ${{ github.event.inputs.level }} et joue un ${{ github.event.inputs.class }}."
