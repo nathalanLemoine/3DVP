@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  first job:
+  first_job:
       runs-on: ubuntu-latest
 
       steps:
@@ -17,7 +17,7 @@ jobs:
       - name: affichage deux
         run: echo "ceci est le second job"
 
-  third job:
+  third_job:
     runs-on: ubuntu-latest
 
     steps:
