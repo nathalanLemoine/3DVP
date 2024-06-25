@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display player information
-        run: echo "Le job a été déclenché par un événement de type ${{github.event}}"
+        run: echo "Le job a été déclenché par un événement de type ${{ github.event_name }}"
