@@ -1,0 +1,12 @@
+name: affichage Hello World
+
+on:
+  push:
+
+jobs:
+  say_hello:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: affichage Hello World
+          run: echo "hello World"
