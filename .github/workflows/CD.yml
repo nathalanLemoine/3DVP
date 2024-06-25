@@ -3,7 +3,7 @@ name: affichage Hello World
 on:
   push:
     branches:
-      -main
+      -master
 
 jobs:
   affichage:
