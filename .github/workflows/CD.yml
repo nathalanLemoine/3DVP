@@ -11,7 +11,7 @@ on:
         description: 'level of the player'
         required: true
         type: string
-      classe:
+      class:
         description: 'the class of the player'
         required: true
         type: choice
