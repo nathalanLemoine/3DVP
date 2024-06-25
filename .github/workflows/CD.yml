@@ -23,6 +23,6 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    - name: display_player_information
+    - name: displayer
       run:
         echo "Le joueur ${{github.event.inputs.username}} est de niveau ${{github.event.inputs.level}} et joue un ${{github.event.inputs.class}}."
