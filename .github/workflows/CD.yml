@@ -1,17 +1,17 @@
-name: python
-
-on:
-  push:
-
-jobs:
-  execute_script:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-
-      - name: python v4
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-      - run: python demo.py
+#name: python
+#
+#on:
+#  push:
+#
+#jobs:
+#  execute_script:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: checkout
+#        uses: actions/checkout@v2
+#
+#      - name: python v4
+#        uses: actions/setup-python@v5
+#        with:
+#          python-version: '3.10'
+#      - run: python demo.py
