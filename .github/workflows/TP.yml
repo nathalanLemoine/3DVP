@@ -1,12 +1,12 @@
-#name: Workflow
-#on:
-#  push:
-#  workflow_dispatch:
-#  schedule:
-#    - cron: '40 4 * * *'
-#jobs:
-#  triggered_by:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Display player information
-#        run: echo "Le job a été déclenché par un événement de type ${{ github.event_name }}"
+name: Workflow
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 4 * * *'
+jobs:
+  triggered_by:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display player information
+        run: echo "Le job a été déclenché par un événement de type ${{ github.event_name }}"
